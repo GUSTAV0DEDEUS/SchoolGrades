@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0"  style="-fx-background-color: transparent;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.CriarAlunoController">
+    <children>
+        <VBox alignment="CENTER" spacing="10" layoutX="50" layoutY="50">
+            <Label text="Nome:" />
+            <TextField fx:id="nomeField" />
+            <Label text="Escola Existente:" />
+            <ComboBox fx:id="escolasComboBox" />
+            <Label text="Data de Nascimento:" />
+            <DatePicker fx:id="dataNascimentoPicker" />
+            <HBox spacing="20" alignment="CENTER">
+                <Button onAction="#handleSalvar" text="Salvar" />
+                <Button onAction="#handleCancelar" text="Cancelar" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.DashboardEscolaController">
+    <TabPane prefHeight="400.0" prefWidth="600.0">
+        <tabs>
+
+            <!-- Alterar Escola -->
+            <Tab text="Alterar Escola">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <TextField fx:id="textFieldNovoNomeEscola" promptText="Novo Nome da Escola"/>
+                        <TextField fx:id="textFieldNovoEndereco" promptText="Novo Endereço"/>
+                        <TextField fx:id="textFieldNovaCidade" promptText="Nova Cidade"/>
+                        <TextField fx:id="textFieldNovoEstado" promptText="Novo Estado"/>
+                        <Button onAction="#alterarEscola" text="Alterar Escola"/>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- Deletar Escola -->
+            <Tab text="Deletar Escola">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <Button onAction="#deletarEscola" text="Deletar Escola"/>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- Listar Alunos -->
+            <Tab text="Listar Alunos">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <TextArea fx:id="textAreaAlunos" prefWidth="400" prefHeight="300" editable="false"/>
+                        <Button onAction="#listarAlunos" text="Listar Alunos"/>
+                    </VBox>
+                </content>
+            </Tab>
+            
+            <!-- Lista de Professores -->
+            <Tab text="Listar Professores">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <!-- Aqui você pode adicionar os elementos necessários para listar os professores -->
+                        <TextArea fx:id="textAreaProfessores" prefWidth="400" prefHeight="300" editable="false"/>
+                        <Button onAction="#listarProfessores" text="Listar Professores"/>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- Deletar Aluno -->
+            <Tab text="Deletar Aluno">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <Label text="Selecione o Aluno:"/>
+                        <ComboBox fx:id="comboBoxAlunosDeletar" promptText="Selecione o Aluno"/>
+                        <Button onAction="#deletarAluno" text="Deletar Aluno"/>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- Deletar Professor -->
+            <Tab text="Deletar Professor">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <Label text="Selecione o Professor:"/>
+                        <ComboBox fx:id="comboBoxProfessoresDeletar" promptText="Selecione o Professor"/>
+                        <Button onAction="#deletarProfessor" text="Deletar Professor"/>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- Excluir Disciplina -->
+            <Tab text="Excluir Disciplina">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <Label text="Selecione a Disciplina:"/>
+                        <ComboBox fx:id="comboBoxDisciplinasExcluir" promptText="Selecione a Disciplina"/>
+                        <Button onAction="#excluirDisciplina" text="Excluir Disciplina"/>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- Listar Disciplinas -->
+            <Tab text="Listar Disciplinas">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <!-- Adicione os elementos necessários para listar as disciplinas -->
+                        <TextArea fx:id="textAreaDisciplinas" prefWidth="400" prefHeight="300" editable="false"/>
+                        <Button onAction="#listarDisciplinas" text="Listar Disciplinas"/>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- Criar Boletins -->
+            <Tab text="Criar Boletins">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <!-- Adicione os elementos necessários para criar boletins -->
+                        <Label text="Disciplina:"/>
+                        <ComboBox fx:id="comboBoxIdDisciplinaCriarBoletins" promptText="ID da Disciplina"/>
+                        <Button onAction="#criarBoletins" text="Criar Boletins"/>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- Criar Disciplina -->
+            <Tab text="Criar Disciplina">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <!-- Adicione os elementos necessários para criar uma disciplina -->
+                        <Label text="Nome da Disciplina:"/>
+                        <TextField fx:id="textFieldNomeDisciplina" promptText="Nome da Disciplina"/>
+                        <Button onAction="#criarDisciplina" text="Criar Disciplina"/>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- Alterar Disciplina -->
+            <Tab text="Alterar Disciplina">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <!-- Adicione os elementos necessários para alterar uma disciplina -->
+                        <Label text="Disciplina:"/>
+                        <ComboBox fx:id="comboBoxIdDisciplinaAlterar" promptText="ID da Disciplina"/>
+                        <Label text="Novo Nome da Disciplina:"/>
+                        <TextField fx:id="textFieldNovoNomeDisciplina" promptText="Novo Nome da Disciplina"/>
+                        <Button onAction="#alterarDisciplina" text="Alterar Disciplina"/>
+                    </VBox>
+                </content>
+            </Tab>
+
+        </tabs>
+    </TabPane>
+</AnchorPane>

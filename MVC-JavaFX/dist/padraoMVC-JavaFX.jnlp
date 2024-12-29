@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="padraoMVC-JavaFX.jnlp">
+  <information>
+    <title>padraoMVC-JavaFX</title>
+    <vendor>gustavo</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib/mysql-connector-java-5.1.16.jar" size="786484" download="eager" />
+    <jar href="lib/mysql-connector-java-8.0.13.jar" size="2132635" download="eager" />
+    <jar href="padraoMVC-JavaFX.jar" size="64966" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="padraomvc.PadraoMVCJavaFX"  name="padraoMVC-JavaFX" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0"  style="-fx-background-color: #FFFFFF;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.RedirecionarPorTipoController">
+   <children>
+      <VBox alignment="CENTER" layoutX="109.0" layoutY="100.0" prefHeight="200.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="Escolha o tipo do seu usuário" style="-fx-font-size: 32px;" />
+            <ComboBox fx:id="tipoContaComboBox" prefWidth="150.0" onAction="#selecionarTipoConta">
+            </ComboBox>
+            <Button text="Confirmar" onAction="#confirmarSelecao" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

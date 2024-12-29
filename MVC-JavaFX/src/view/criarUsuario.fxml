@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.CriarUsuarioController">
+    <children>
+        <VBox alignment="CENTER" spacing="10" layoutX="50" layoutY="50">
+            <Label text="Email:" />
+            <TextField fx:id="emailField" />
+            <Label text="Senha:" />
+            <PasswordField fx:id="senhaField" />
+            <Button onAction="#cadastrar" text="Cadastrar" />
+        </VBox>
+    </children>
+</AnchorPane>

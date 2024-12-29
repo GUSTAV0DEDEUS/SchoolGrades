@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.DashboardProfessorController">
+    <TabPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1">
+        <tabs>
+            <Tab text="Listar Alunos">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <TextArea fx:id="textAreaAlunos" prefWidth="400" prefHeight="300" editable="false"/>
+                        <Button onAction="#listarAlunos" text="Listar Alunos"/>
+                    </VBox>
+                </content>
+            </Tab>
+            <Tab text="Listar Boletins">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <TextArea fx:id="textAreaBoletins" prefWidth="400" prefHeight="300" editable="false"/>
+                        <Button onAction="#listarBoletins" text="Listar Boletins"/>
+                    </VBox>
+                </content>
+            </Tab>
+            <Tab text="Alterar Nota">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <Label text="Selecione o Aluno:"/>
+                        <ComboBox fx:id="comboBoxAlunos" promptText="Selecione o Aluno"/>
+                        <Label text="Nova Nota:"/>
+                        <TextField fx:id="textFieldNovaNota" promptText="Nova Nota"/>
+                        <Button onAction="#alterarNota" text="Alterar Nota"/>
+                    </VBox>
+                </content>
+            </Tab>
+            <Tab text="Alterar Dados Professor">
+                <content>
+                    <VBox alignment="CENTER" spacing="10">
+                        <Label text="Novo Nome do Professor:"/>
+                        <TextField fx:id="textFieldNovoNome" promptText="Novo Nome do Professor"/>
+                        <Button onAction="#alterarDadosProfessor" text="Alterar Dados do Professor"/>
+                    </VBox>
+                </content>
+            </Tab>
+        </tabs>
+    </TabPane>
+</AnchorPane>
